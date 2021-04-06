@@ -36,8 +36,5 @@ extension AstronomyPresenter: InteractorToPresenterProtocol {
         view?.showError()
     }
     
-    func showMovieController(navigationController: UINavigationController) {
-        //
-    }
 }
 

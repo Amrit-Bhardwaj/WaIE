@@ -7,20 +7,31 @@
 
 import Foundation
 
-final class ImageModel {
+struct ImageModel {
     
-    var id: String?
+    var copyright: String?
+    var date: String?
+    var explanation: String?
+    var hdurl: String?
+    var media_type: String?
+    var service_version: String?
     var title: String?
-    var detail: String?
-    var imageName: String?
-    var date: Date?
+    var url: String?
     
-    init(title: String?, detail: String?, imageName: String?, date: Date?) {
-        // TODO: Set a unique id for the image
-        self.title = title
-        self.detail = detail
-        self.imageName = imageName
-        self.date = date
+    // TODO: - Json keys to be put in separate constant file
+    init(jsonData: [String: AnyObject]?) {
+        
+        if let json = jsonData {
+            
+            copyright = json["copyright"] as? String
+            date = json["date"] as? String
+            explanation = json["explanation"] as? String
+            hdurl = json["hdurl"] as? String
+            media_type = json["media_type"] as? String
+            service_version = json["service_version"] as? String
+            title = json["title"] as? String
+            url = json["url"] as? String
+        }
     }
 }
 

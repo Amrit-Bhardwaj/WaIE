@@ -7,11 +7,26 @@
 
 import UIKit
 
-final class TitleImageTableViewCell: UITableViewCell {
 
+final class TitleImageTableViewCell: UITableViewCell {
+    
+    
+    // MARK:- IBOutlets
+    
+    @IBOutlet private weak var titleLabel: UILabel!
+
+    @IBOutlet private weak var astroImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    // MARK:- Custom Methods
+    
+    func configure(text: String?, image: UIImage) {
+        titleLabel.text = text
+        astroImageView.image = image
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

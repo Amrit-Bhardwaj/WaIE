@@ -26,6 +26,22 @@
 		5B2D3B02261C5096001E9E45 /* AstronomyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B01261C5096001E9E45 /* AstronomyModel.swift */; };
 		5B2D3B2F261C6253001E9E45 /* AstronomyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B2E261C6253001E9E45 /* AstronomyInteractor.swift */; };
 		5B2D3B38261C62FD001E9E45 /* AstronomyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B37261C62FD001E9E45 /* AstronomyPresenter.swift */; };
+		5B2D3B48261C7B6B001E9E45 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B47261C7B6B001E9E45 /* Date+Extension.swift */; };
+		5B2D3B4D261C7B78001E9E45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B4C261C7B78001E9E45 /* Constants.swift */; };
+		5B2D3B52261C7B92001E9E45 /* tableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */; };
+		5B2D3B57261C7F78001E9E45 /* MartianSisters_Rose_960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */; };
+		5B2D3B65261C89E0001E9E45 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B64261C89E0001E9E45 /* DatabaseManager.swift */; };
+		5B2D3B6E261C8A33001E9E45 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B6D261C8A33001E9E45 /* FileManager.swift */; };
+		5B2D3B7C261C90DC001E9E45 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B7B261C90DC001E9E45 /* Request.swift */; };
+		5B2D3B81261C93A3001E9E45 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B80261C93A3001E9E45 /* UserRequests.swift */; };
+		5B2D3B86261C9495001E9E45 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B85261C9495001E9E45 /* Environment.swift */; };
+		5B2D3B8B261C951A001E9E45 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B8A261C951A001E9E45 /* NetworkDispatcher.swift */; };
+		5B2D3B90261C955D001E9E45 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B8F261C955D001E9E45 /* Response.swift */; };
+		5B2D3B9B261C9998001E9E45 /* GetAstroImageDetailsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B9A261C9998001E9E45 /* GetAstroImageDetailsTask.swift */; };
+		5B2D3BA0261C99F7001E9E45 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B9F261C99F7001E9E45 /* Task.swift */; };
+		5B2D3BA5261C9D1E001E9E45 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3BA4261C9D1E001E9E45 /* NetworkReachabilityManager.swift */; };
+		5B2D3BB1261CA136001E9E45 /* DownloadImageDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3BB0261CA136001E9E45 /* DownloadImageDataTask.swift */; };
+		5B2D3BB6261CA3AC001E9E45 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3BB5261CA3AC001E9E45 /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +87,22 @@
 		5B2D3B01261C5096001E9E45 /* AstronomyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyModel.swift; sourceTree = "<group>"; };
 		5B2D3B2E261C6253001E9E45 /* AstronomyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyInteractor.swift; sourceTree = "<group>"; };
 		5B2D3B37261C62FD001E9E45 /* AstronomyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPresenter.swift; sourceTree = "<group>"; };
+		5B2D3B47261C7B6B001E9E45 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		5B2D3B4C261C7B78001E9E45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tableView+Extension.swift"; sourceTree = "<group>"; };
+		5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MartianSisters_Rose_960.jpg; sourceTree = "<group>"; };
+		5B2D3B64261C89E0001E9E45 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5B2D3B6D261C8A33001E9E45 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		5B2D3B7B261C90DC001E9E45 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5B2D3B80261C93A3001E9E45 /* UserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		5B2D3B85261C9495001E9E45 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		5B2D3B8A261C951A001E9E45 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		5B2D3B8F261C955D001E9E45 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		5B2D3B9A261C9998001E9E45 /* GetAstroImageDetailsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAstroImageDetailsTask.swift; sourceTree = "<group>"; };
+		5B2D3B9F261C99F7001E9E45 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5B2D3BA4261C9D1E001E9E45 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		5B2D3BB0261CA136001E9E45 /* DownloadImageDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDataTask.swift; sourceTree = "<group>"; };
+		5B2D3BB5261CA3AC001E9E45 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +153,12 @@
 		5B2D3A8E261B577F001E9E45 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
-				5B2D3A8F261B577F001E9E45 /* AppDelegate.swift */,
-				5B2D3A93261B577F001E9E45 /* ViewController.swift */,
+				5B2D3B69261C89E7001E9E45 /* DatabaseManager */,
+				5B2D3B72261C8A3F001E9E45 /* FileManager */,
+				5B2D3B60261C89A4001E9E45 /* NetworkManager */,
+				5B2D3B43261C7B57001E9E45 /* Utilities */,
 				5B2D3A91261B577F001E9E45 /* SceneDelegate.swift */,
+				5B2D3BA9261C9E1E001E9E45 /* ReachabilityManager */,
 				5B2D3B3C261C6307001E9E45 /* Presenter */,
 				5B2D3B33261C6259001E9E45 /* Interactor */,
 				5B2D3B0A261C51E2001E9E45 /* Protocols */,
@@ -133,6 +168,8 @@
 				5B2D3AED261C4CE0001E9E45 /* AppUI */,
 				5B2D3A9B261B5780001E9E45 /* Assets.xcassets */,
 				5B2D3A9D261B5780001E9E45 /* LaunchScreen.storyboard */,
+				5B2D3BB5261CA3AC001E9E45 /* JSONParser.swift */,
+				5B2D3A8F261B577F001E9E45 /* AppDelegate.swift */,
 				5B2D3AA0261B5780001E9E45 /* Info.plist */,
 				5B2D3A98261B577F001E9E45 /* WalE.xcdatamodeld */,
 			);
@@ -215,6 +252,57 @@
 				5B2D3B37261C62FD001E9E45 /* AstronomyPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5B2D3B43261C7B57001E9E45 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5B2D3A93261B577F001E9E45 /* ViewController.swift */,
+				5B2D3B47261C7B6B001E9E45 /* Date+Extension.swift */,
+				5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */,
+				5B2D3B4C261C7B78001E9E45 /* Constants.swift */,
+				5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5B2D3B60261C89A4001E9E45 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				5B2D3B7B261C90DC001E9E45 /* Request.swift */,
+				5B2D3B85261C9495001E9E45 /* Environment.swift */,
+				5B2D3B8F261C955D001E9E45 /* Response.swift */,
+				5B2D3B8A261C951A001E9E45 /* NetworkDispatcher.swift */,
+				5B2D3B80261C93A3001E9E45 /* UserRequests.swift */,
+				5B2D3B9A261C9998001E9E45 /* GetAstroImageDetailsTask.swift */,
+				5B2D3BB0261CA136001E9E45 /* DownloadImageDataTask.swift */,
+				5B2D3B9F261C99F7001E9E45 /* Task.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		5B2D3B69261C89E7001E9E45 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				5B2D3B64261C89E0001E9E45 /* DatabaseManager.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		5B2D3B72261C8A3F001E9E45 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				5B2D3B6D261C8A33001E9E45 /* FileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		5B2D3BA9261C9E1E001E9E45 /* ReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				5B2D3BA4261C9D1E001E9E45 /* NetworkReachabilityManager.swift */,
+			);
+			path = ReachabilityManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +411,7 @@
 				5B2D3AE5261C498C001E9E45 /* DetailedTextTableViewCell.xib in Resources */,
 				5B2D3A9F261B5780001E9E45 /* LaunchScreen.storyboard in Resources */,
 				5B2D3A9C261B5780001E9E45 /* Assets.xcassets in Resources */,
+				5B2D3B57261C7F78001E9E45 /* MartianSisters_Rose_960.jpg in Resources */,
 				5B2D3A97261B577F001E9E45 /* Main.storyboard in Resources */,
 				5B2D3ADE261C494F001E9E45 /* TitleImageTableViewCell.xib in Resources */,
 			);
@@ -350,15 +439,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B2D3A94261B577F001E9E45 /* ViewController.swift in Sources */,
+				5B2D3BA5261C9D1E001E9E45 /* NetworkReachabilityManager.swift in Sources */,
+				5B2D3BB6261CA3AC001E9E45 /* JSONParser.swift in Sources */,
+				5B2D3B8B261C951A001E9E45 /* NetworkDispatcher.swift in Sources */,
 				5B2D3AE4261C498C001E9E45 /* DetailedTextTableViewCell.swift in Sources */,
+				5B2D3B48261C7B6B001E9E45 /* Date+Extension.swift in Sources */,
 				5B2D3A90261B577F001E9E45 /* AppDelegate.swift in Sources */,
+				5B2D3BB1261CA136001E9E45 /* DownloadImageDataTask.swift in Sources */,
+				5B2D3B65261C89E0001E9E45 /* DatabaseManager.swift in Sources */,
 				5B2D3AD6261C48B6001E9E45 /* AstronomyTableViewController.swift in Sources */,
+				5B2D3BA0261C99F7001E9E45 /* Task.swift in Sources */,
+				5B2D3B86261C9495001E9E45 /* Environment.swift in Sources */,
+				5B2D3B9B261C9998001E9E45 /* GetAstroImageDetailsTask.swift in Sources */,
 				5B2D3A9A261B577F001E9E45 /* WalE.xcdatamodeld in Sources */,
 				5B2D3AF4261C4DCD001E9E45 /* AstronomyRouter.swift in Sources */,
 				5B2D3B2F261C6253001E9E45 /* AstronomyInteractor.swift in Sources */,
 				5B2D3ADD261C494F001E9E45 /* TitleImageTableViewCell.swift in Sources */,
 				5B2D3A92261B577F001E9E45 /* SceneDelegate.swift in Sources */,
 				5B2D3B02261C5096001E9E45 /* AstronomyModel.swift in Sources */,
+				5B2D3B90261C955D001E9E45 /* Response.swift in Sources */,
+				5B2D3B81261C93A3001E9E45 /* UserRequests.swift in Sources */,
+				5B2D3B4D261C7B78001E9E45 /* Constants.swift in Sources */,
+				5B2D3B52261C7B92001E9E45 /* tableView+Extension.swift in Sources */,
+				5B2D3B6E261C8A33001E9E45 /* FileManager.swift in Sources */,
+				5B2D3B7C261C90DC001E9E45 /* Request.swift in Sources */,
 				5B2D3AFD261C4EB8001E9E45 /* AstronomyProtocols.swift in Sources */,
 				5B2D3B38261C62FD001E9E45 /* AstronomyPresenter.swift in Sources */,
 			);

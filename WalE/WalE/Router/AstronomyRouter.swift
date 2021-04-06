@@ -11,7 +11,8 @@ final class AstronomyRouter: PresenterToRouterProtocol {
        
     
     static func createModule() -> AstronomyTableViewController {
-
+        
+        // This can be set using xib too
         let view = mainstoryboard.instantiateViewController(withIdentifier: "AstronomyTableViewController") as! AstronomyTableViewController
 
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = AstronomyPresenter()
