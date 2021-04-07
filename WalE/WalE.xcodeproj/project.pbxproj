@@ -27,7 +27,6 @@
 		5B2D3B2F261C6253001E9E45 /* AstronomyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B2E261C6253001E9E45 /* AstronomyInteractor.swift */; };
 		5B2D3B38261C62FD001E9E45 /* AstronomyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B37261C62FD001E9E45 /* AstronomyPresenter.swift */; };
 		5B2D3B48261C7B6B001E9E45 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B47261C7B6B001E9E45 /* Date+Extension.swift */; };
-		5B2D3B4D261C7B78001E9E45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B4C261C7B78001E9E45 /* Constants.swift */; };
 		5B2D3B52261C7B92001E9E45 /* tableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */; };
 		5B2D3B57261C7F78001E9E45 /* MartianSisters_Rose_960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */; };
 		5B2D3B65261C89E0001E9E45 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D3B64261C89E0001E9E45 /* DatabaseManager.swift */; };
@@ -46,6 +45,7 @@
 		5B6732F4261D71A00023F3BE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6732F3261D71A00023F3BE /* String+Extension.swift */; };
 		5B6732F9261D72DB0023F3BE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6732F8261D72DB0023F3BE /* LoadingIndicator.swift */; };
 		5B6732FE261D73CC0023F3BE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6732FD261D73CC0023F3BE /* UIViewController+Extension.swift */; };
+		5B673309261DB8F10023F3BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673308261DB8F10023F3BE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +92,6 @@
 		5B2D3B2E261C6253001E9E45 /* AstronomyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyInteractor.swift; sourceTree = "<group>"; };
 		5B2D3B37261C62FD001E9E45 /* AstronomyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPresenter.swift; sourceTree = "<group>"; };
 		5B2D3B47261C7B6B001E9E45 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		5B2D3B4C261C7B78001E9E45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tableView+Extension.swift"; sourceTree = "<group>"; };
 		5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MartianSisters_Rose_960.jpg; sourceTree = "<group>"; };
 		5B2D3B64261C89E0001E9E45 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		5B6732F3261D71A00023F3BE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5B6732F8261D72DB0023F3BE /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		5B6732FD261D73CC0023F3BE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5B673308261DB8F10023F3BE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +272,7 @@
 				5B6732F3261D71A00023F3BE /* String+Extension.swift */,
 				5B6732F8261D72DB0023F3BE /* LoadingIndicator.swift */,
 				5B2D3B56261C7F78001E9E45 /* MartianSisters_Rose_960.jpg */,
-				5B2D3B4C261C7B78001E9E45 /* Constants.swift */,
+				5B673308261DB8F10023F3BE /* Constants.swift */,
 				5B2D3B51261C7B92001E9E45 /* tableView+Extension.swift */,
 			);
 			path = Utilities;
@@ -457,6 +457,7 @@
 				5B2D3AE4261C498C001E9E45 /* DetailedTextTableViewCell.swift in Sources */,
 				5B2D3B48261C7B6B001E9E45 /* Date+Extension.swift in Sources */,
 				5B2D3A90261B577F001E9E45 /* AppDelegate.swift in Sources */,
+				5B673309261DB8F10023F3BE /* Constants.swift in Sources */,
 				5B2D3BBE261CF3AE001E9E45 /* AstroImage.swift in Sources */,
 				5B2D3BB1261CA136001E9E45 /* DownloadAttachmentDataTask.swift in Sources */,
 				5B2D3B65261C89E0001E9E45 /* DatabaseManager.swift in Sources */,
@@ -474,7 +475,6 @@
 				5B2D3B02261C5096001E9E45 /* AstronomyModel.swift in Sources */,
 				5B2D3B90261C955D001E9E45 /* Response.swift in Sources */,
 				5B2D3B81261C93A3001E9E45 /* UserRequests.swift in Sources */,
-				5B2D3B4D261C7B78001E9E45 /* Constants.swift in Sources */,
 				5B2D3B52261C7B92001E9E45 /* tableView+Extension.swift in Sources */,
 				5B2D3B6E261C8A33001E9E45 /* AstroFileManager.swift in Sources */,
 				5B2D3B7C261C90DC001E9E45 /* Request.swift in Sources */,
