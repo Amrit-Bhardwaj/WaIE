@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* This protocol describes the interface for a task object
+ */
 protocol Task {
    // associatedtype Output
     

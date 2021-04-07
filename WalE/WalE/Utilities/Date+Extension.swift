@@ -18,17 +18,13 @@ extension Date {
         return Date(timeInterval: seconds, since: self)
     }
     
+    /// This method is used for ignoring the hr, min, sec component of date
+    ///
+    /// - Returns: Date
     func effectiveCurrentDate() -> Date {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = format
-//        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-//        dateFormatter.timeZone = .current
-//        let date = dateFormatter.date(from: self)!
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month, .day], from: self)
         let finalDate = calendar.date(from: components)!
         return finalDate
     }
-    
-    
 }

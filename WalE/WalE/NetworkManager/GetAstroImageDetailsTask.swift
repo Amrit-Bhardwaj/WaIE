@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* This class denotes the GET task for the Attachment(Image) details
+ */
 class GetAstroImageDetailsTask: Task {
         
        //TODO: - This should be read from keychain

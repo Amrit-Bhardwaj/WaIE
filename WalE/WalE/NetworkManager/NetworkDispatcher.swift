@@ -7,11 +7,15 @@
 
 import Foundation
 
+/* This enum is used to describe the possible network errors
+ */
 public enum NetworkErrors: Error {
     case badInput
     case noData
 }
 
+/* This class is used to dispatch all incoming requests to the backend server
+ */
 public class NetworkDispatcher: Dispatcher {
 
     private var environment: Environment
@@ -23,6 +27,8 @@ public class NetworkDispatcher: Dispatcher {
         self.session = URLSession(configuration: URLSessionConfiguration.default)
     }
     
+    /* This function is used to execute an incoming request over the server
+     */
     public func execute(request: Request, success: @escaping ((Response) -> Void), failure: @escaping ((Error?) -> Void)) throws {
         let req = try self.prepareURLRequest(for: request)
         let task = self.session.dataTask(with: req) { (data, response, error) in
@@ -34,17 +40,10 @@ public class NetworkDispatcher: Dispatcher {
             }
         }
         task.resume()
-        
-//        return Response(<#T##response: (r: HTTPURLResponse?, data: Data?, error: Error?)##(r: HTTPURLResponse?, data: Data?, error: Error?)#>, for: rq)
-//        return Response(in: .background, { resolve, _ in
-//            let d = self.session.dataTask(with: rq, completionHandler: { (data, urlResponse, error) in
-//                let response = Response( (urlResponse as? HTTPURLResponse,data,error), for: request)
-//                resolve(response)
-//            })
-//            d.resume()
-//        })
     }
     
+    /* This function is used to create the url request using the base url and relative path
+     */
     private func prepareURLRequest(for request: Request) throws -> URLRequest {
         // Compose the url
         

@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* This enum represents a request object to backend server
+ */
 public enum UserRequests: Request {
 
     case login(username: String, password: String)

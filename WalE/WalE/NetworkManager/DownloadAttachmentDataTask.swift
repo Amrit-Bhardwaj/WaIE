@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* This class denotes the task of downloading any attachment(media type = .png, .jpeg, .mov)
+ */
 class DownloadAttachmentDataTask: Task {
     
     var path: String

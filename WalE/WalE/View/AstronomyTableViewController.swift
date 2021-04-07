@@ -31,6 +31,8 @@ final class AstronomyTableViewController: UITableViewController {
     private func setUp() {
         // TODO: - title should be fetched from localized file
         title = "Astronomy Picture of the Day"
+        // TODO: - Setup cell theme from ThemingManager
+        tableView.backgroundColor = .cyan
         tableView.register(TitleImageTableViewCell.self, cellIdentifier: "TitleImageTableViewCell")
         tableView.register(DetailedTextTableViewCell.self, cellIdentifier: "DetailedTextTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
@@ -61,8 +63,6 @@ extension AstronomyTableViewController {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "TitleImageTableViewCell", for: indexPath) as? TitleImageTableViewCell {
                 cell.configure(text: astroDetails.1, image: (UIImage(data: astroDetails.0) ?? UIImage(named: "DummyImage"))!)
                 
-                // TODO: - Setup cell theme from ThemingManager
-                cell.backgroundColor = .blue
                 return cell
             } else {
                 return UITableViewCell()
@@ -71,9 +71,6 @@ extension AstronomyTableViewController {
         } else {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "DetailedTextTableViewCell", for: indexPath) as? DetailedTextTableViewCell {
                 cell.configure(detailText: astroDetails.2)
-                
-                // TODO: - Setup cell theme from ThemingManager
-                cell.backgroundColor = .red
                 return cell
             } else {
                 return UITableViewCell()

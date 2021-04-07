@@ -7,17 +7,20 @@
 
 import UIKit
 
+/* This class handles all the file system related operations
+ */
 final class AstroFileManager: FileManagerProtocol {
     
     private var manager = FileManager.default
     
+    /* This function is used to save the data with the fileName into Application support directory
+     */
     func save(fileName: String, file: Data) {
         let directoryURL = manager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
         if let fileURL = directoryURL?.appendingPathComponent(fileName) {
             if !manager.fileExists(atPath: fileURL.path) {
                 
                 do {
-                    print(fileURL)
                     try file.write(to: fileURL)
                 } catch {
                     // Handle Error gracefully
@@ -26,6 +29,8 @@ final class AstroFileManager: FileManagerProtocol {
         }
     }
     
+    /* This function is used to open the fileName from Application support directory
+     */
     func openFile(fileName: String) -> Data? {
         let directoryURL = manager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
         

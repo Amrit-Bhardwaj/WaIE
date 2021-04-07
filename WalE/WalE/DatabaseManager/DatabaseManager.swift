@@ -7,12 +7,16 @@
 
 import CoreData
 
+/* This enum describes possible error cases while dB operation
+ */
 enum PersistenceError: Error {
     case managedObjectContextNotFound
     case couldNotSaveObject
     case objectNotFound
 }
 
+/* This class handles all local dB related operations
+ */
 final class DatabaseManager: DatabaseManagerProtocol {
     
     //TODO: - We need to implement an in-memory caching mechanism(LRU, LFU or sliding window) to reduce number of
@@ -22,6 +26,8 @@ final class DatabaseManager: DatabaseManagerProtocol {
     // We can use background context to write heavy data
     private var moc = AppDelegate.viewContext
     
+    /* This function performs fetch operation from dB and returns the image details: date, title, explanation, filePath
+     */
     func fetch() -> (Date?, String?, String?, String?) {
         let request: NSFetchRequest<AstroImage> = AstroImage.fetchRequest()
         request.fetchLimit = 1

@@ -21,7 +21,6 @@ class AstronomyPresenter: ViewToPresenterProtocol {
     }
     
     func showAstroImageController(navigationController: UINavigationController) {
-//        router?.pushToImageScreen(navigationConroller:navigationController)
     }
 
 }

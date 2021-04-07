@@ -41,7 +41,7 @@ final class AstronomyInteractor: PresenterToInteractorProtocol {
     // TODO: -  We can use an Operation Queue and enqueue the two tasks and set dependency
     
     func fetchImage() {
-         
+        
         //Fetching the last entry in the dB, sorted based on date
         // We can improve the fetch using faulting and memory pruning
         let dbEntry = databaseManager?.fetch()
@@ -53,6 +53,15 @@ final class AstronomyInteractor: PresenterToInteractorProtocol {
             
             if dbEntry == nil || dbEntry?.0 != currenEffectiveDate {
                 performFetch()
+                
+            } else {
+                
+                // Case 4: when Internet is available and dB has entry for current Date, we show the image from directory
+                if let dBData = dbEntry, dBData.0 == currenEffectiveDate {
+                    
+                    let imageData = fileManager?.openFile(fileName: dBData.3!)
+                    self.presenter?.imageFetchedSuccess(imageData: imageData!, title: dBData.1!, explanation: dBData.2!)
+                }
             }
             
         } else {
@@ -122,7 +131,7 @@ final class AstronomyInteractor: PresenterToInteractorProtocol {
         
         //TODO: - The url should be split into baseurl and relative path
         //TODO: - The constants should be moved to AppConstants
-//        let baseUrl = url.components(separatedBy: "//")[1].components(separatedBy: "/").first
+        //        let baseUrl = url.components(separatedBy: "//")[1].components(separatedBy: "/").first
         
         let dispatcher = NetworkDispatcher(environment: Environment(Env.debug.rawValue, host: url))
         let attachmentDownloadTask = DownloadAttachmentDataTask(path: "")

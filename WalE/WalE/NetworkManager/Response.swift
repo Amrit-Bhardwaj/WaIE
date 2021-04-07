@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* This enum is used to resolve the API response object
+ */
 public enum Response {
     case json(_: [String: AnyObject])
     case data(_: Data)
