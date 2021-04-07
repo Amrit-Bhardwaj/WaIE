@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+// TODO: - We set up the cell theme using a TheamingManager class
 final class TitleImageTableViewCell: UITableViewCell {
     
     

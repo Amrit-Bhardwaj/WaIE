@@ -5,10 +5,17 @@
 //  Created by Amrit Bhardwaj on 06/04/21.
 //
 
-import Foundation
+import UIKit
 
-final class FileManager {
-    static var shared = FileManager()
+final class AstroFileManager: FileManagerProtocol {
     
-    private init() {}
+    private lazy var root = AstroFileManager
+    
+    func save(fileName: String) {
+        
+    }
+    
+    func openFile(fileName: String) -> Data {
+        return Data()
+    }
 }

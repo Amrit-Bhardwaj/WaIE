@@ -11,16 +11,21 @@ final class AstronomyTableViewController: UITableViewController {
     
     var presentor: ViewToPresenterProtocol?
     
+    //TODO: TypeAlias
+    private var astroDetails: (Data, String, String) = (Data(), "Dummy Title", "Dummy Explanation")
+    
+    // MARK: - ViewController life cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        LoadingIndicator.sharedInstance.showOnWindow()
         presentor?.startFetchingImage()
-        
         setUp()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        LoadingIndicator.sharedInstance.showOnWindow()
+        presentor?.startFetchingImage()
     }
     
     private func setUp() {
@@ -39,19 +44,24 @@ extension AstronomyTableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        // TODO:- This has to be mapped to the presenter data size
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        // TODO:- This has to be mapped to the presenter data size
         return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // TODO: - use an enum for index comparison
         if indexPath.row == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "TitleImageTableViewCell", for: indexPath) as? TitleImageTableViewCell {
-                cell.configure(text: "Mars and the Pleiades Beyond Vinegar Hill", image: UIImage(named: "DummyImage")!)
+                cell.configure(text: astroDetails.1, image: (UIImage(data: astroDetails.0) ?? UIImage(named: "DummyImage"))!)
+                
+                // TODO: - Setup cell theme from ThemingManager
                 cell.backgroundColor = .blue
                 return cell
             } else {
@@ -60,7 +70,9 @@ extension AstronomyTableViewController {
            
         } else {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "DetailedTextTableViewCell", for: indexPath) as? DetailedTextTableViewCell {
-                cell.configure(detailText: "Is this just a lonely tree on an empty hill? To start, perhaps, but look beyond. There, a busy universe may wait to be discovered. First, physically, to the left of the tree, is the planet Mars. The red planet, which is the new home to NASA's Perseverance rover, remains visible this month at sunset above the western horizon. To the tree's right is the Pleiades, a bright cluster of stars dominated by several bright blue stars. The featured picture is a composite of several separate foreground and background images taken within a few hours of each other, early last month, from the same location on Vinegar Hill in Milford, Nova Scotia, Canada. At that time, Mars was passing slowly, night after night, nearly in front of the distant Seven Sisters star cluster. The next time Mars will pass angularly as close to the Pleiades as it did in March will be in 2038.")
+                cell.configure(detailText: astroDetails.2)
+                
+                // TODO: - Setup cell theme from ThemingManager
                 cell.backgroundColor = .red
                 return cell
             } else {
@@ -71,13 +83,24 @@ extension AstronomyTableViewController {
 }
 
 extension AstronomyTableViewController: PresenterToViewProtocol {
-    func showAstronomyImage(imageArray: Array<ImageModel>) {
-        //
+    
+    func showAstronomyDetails(imageData: Data, title: String, explanation: String) {
+        self.astroDetails = (imageData, title, explanation)
+        self.tableView.reloadData()
+        LoadingIndicator.sharedInstance.hide()
     }
     
     func showError() {
- //
+        LoadingIndicator.sharedInstance.hide()
+        let errorActionHandler: ((UIAlertAction) -> Void) = {[weak self] (action) in
+            self?.tableView.reloadData()
+        }
         
+        //TODO: - The strings should be added to localizable string file
+        showAlert(title: "Alert",
+                  message: "We are not connected to the internet, showing you the last image we have.",
+                  style: [.default],
+                  actions: [(title: "Ok",
+                             event: errorActionHandler)])
     }
-    
 }

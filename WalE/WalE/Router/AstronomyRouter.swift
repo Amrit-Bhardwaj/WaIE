@@ -18,13 +18,17 @@ final class AstronomyRouter: PresenterToRouterProtocol {
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = AstronomyPresenter()
         let interactor: PresenterToInteractorProtocol = AstronomyInteractor()
         let router:PresenterToRouterProtocol = AstronomyRouter()
-
+        let databaseManager: DatabaseManagerProtocol = DatabaseManager()
+        let fileManager: FileManagerProtocol = AstroFileManager()
+        
         view.presentor = presenter
         presenter.view = view
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-
+        interactor.databaseManager = databaseManager
+        interactor.fileManager = fileManager
+        
         return view
 
     }

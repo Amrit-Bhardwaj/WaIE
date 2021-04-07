@@ -29,7 +29,7 @@ class GetAstroImageDetailsTask: Task {
                     
                     case .json(let json):
                         success(json)
-                    case .error(let errorCode, let errorMessage):
+                    case .error(_, let errorMessage):
                         failure(errorMessage)
                         
                     default:

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DownloadImageDataTask: Task {
+class DownloadAttachmentDataTask: Task {
     
     var path: String
     
@@ -28,7 +28,7 @@ class DownloadImageDataTask: Task {
                 
                 case .data(let data):
                     success(data)
-                case .error(let errorCode, let errorMessage):
+                case .error( _, let errorMessage):
                     failure(errorMessage)
                     
                 default:

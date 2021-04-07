@@ -28,8 +28,8 @@ class AstronomyPresenter: ViewToPresenterProtocol {
 
 extension AstronomyPresenter: InteractorToPresenterProtocol {
     
-    func imageFetchedSuccess(imageModelArray: Array<ImageModel>) {
-        view?.showAstronomyImage(imageArray: imageModelArray)
+    func imageFetchedSuccess(imageData: Data, title: String, explanation: String) {
+        view?.showAstronomyDetails(imageData: imageData, title: title, explanation: explanation)
     }
     
     func imageFetchFailed() {
